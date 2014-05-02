@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Fjodor's Countdowns</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/flipclock.css">
+</head>
+<body>
+	<h3>Exercise Sheet 5 <small><i>due Thu May 22 08:30</i></small></h3>
+	<div class="es5cd"></div>
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/flipclock.min.js"></script>
+	<script>
+		var currentdate = new Date();
+		var es5date = new Date("Thu May 22 2014 08:30:00 GMT+0200 (CEST)");
+		var es5secs = Math.round((es5date - currentdate) / 1000);
+		var es5cd = $('.es5cd').FlipClock(es5secs, {
+			clockFace: 'DailyCounter',
+			countdown: true
+		});
+	</script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
