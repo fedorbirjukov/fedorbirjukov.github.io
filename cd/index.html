@@ -17,18 +17,50 @@
 			<h1>Fjodor's Countdowns</h1>
 			<p class="lead">Keep track of tasks and emphasize their importance.</p>
 		</div> <!-- .page-header -->
+		<h3>Beta Version <small><i>due Sun May 18 23:55</i></small></h3>
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="bv" class="countdown"></div>
+			</div>
+		</div> <!-- .row -->
 		<h3>Exercise Sheet 5 <small><i>due Thu May 22 08:30</i></small></h3>
 		<div class="row">
 			<div class="col-xs-12">
 				<div id="es5" class="countdown"></div>
 			</div>
 		</div> <!-- .row -->
+		<h3>Milestone 3 and Skills Freeze (Exam period begins) <small><i>due Sun May 25 23:55</i></small></h3>
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="ms3" class="countdown"></div>
+			</div>
+		</div> <!-- .row -->
+		<h3>Milestone 4 <small><i>due Sun Jun 1 23:55</i></small></h3>
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="ms4" class="countdown"></div>
+			</div>
+		</div> <!-- .row -->
+		<h3>Final delivery (with slides) <small><i>due Fri Jun 20 23:55</i></small></h3>
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="fd" class="countdown"></div>
+			</div>
+		</div> <!-- .row -->
 		<script src="../assets/js/jquery.min.js"></script>
 		<script src="../assets/js/jquery.plugin.min.js"></script>
 		<script src="../assets/js/jquery.countdown.min.js"></script>
 		<script>
+			var bv = new Date("Sun May 18 2014 23:55:00 GMT+0200 (CEST)");
+			$('#bv').countdown({until: bv, padZeroes: true});
 			var es5 = new Date("Thu May 22 2014 08:30:00 GMT+0200 (CEST)");
 			$('#es5').countdown({until: es5, padZeroes: true});
+			var ms3 = new Date("Sun May 25 2014 23:55:00 GMT+0200 (CEST)");
+			$('#ms3').countdown({until: ms3, padZeroes: true});
+			var fd = new Date("Fri Jun 20 2014 23:55:00 GMT+0200 (CEST)");
+			$('#fd').countdown({until: fd, padZeroes: true});
+			var ms4 = new Date("Sun Jun 1 2014 23:55:00 GMT+0200 (CEST)");
+			$('#ms4').countdown({until: ms4, padZeroes: true});
 		</script>
 		<script src="../assets/js/bootstrap.min.js"></script>
 	</div> <!-- .container -->
