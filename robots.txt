@@ -1,4 +1,5 @@
 User-agent: *
-Disallow: 
-Disallow: /cd/
+Disallow: /_layouts/
+Disallow: /_posts/
 Disallow: /assets/
+Disallow: /cd/
